@@ -8,6 +8,17 @@
 
 
 # Здесь пишем код
+def segment(k1, k2):
+    """
+Проверяем корректность полученных кортежей
+    """
+    try:
+        total = k1[0] + k1[1] + k2[0] + k2[1]
+        return total
+    except Exception as e:
+        text = e.args[0]
+        text1 = text[::-1]
+        return text1
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 
