@@ -20,7 +20,7 @@ import unittest  # Не удалять
 
 def treatment_sum(our_tuple):
     """
-Складывает два числа 
+Складывает два числа
     """
     if len(our_tuple) <= 2:
         try:
@@ -32,9 +32,6 @@ def treatment_sum(our_tuple):
             return 'Недостаточно данных'
     if len(our_tuple) > 2:
         raise Exception('Много данных')
-
-
-
 
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

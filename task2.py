@@ -23,13 +23,15 @@ class Trigon:
         try:
             S = args[0] + args[1] + args[2]
         except TypeError:
-            raise TypeError ('Стороны должны быть числами')
+            raise TypeError('Стороны должны быть числами')
         except IndexError:
-            raise IndexError (f'Передано {len(args)} аргументов, а ожидается 3')
+            raise IndexError(f'Передано {len(args)} аргументов, а ожидается 3')
         if args[0] < 0 or args[1] < 0 or args[2] < 0:
             raise ValueError('Стороны должны быть положительными')
         if not(args[0] + args[1] > args[2] and args[0] + args[2] > args[1] and args[1] + args[2] > args[0]):
             raise Exception('Не треугольник')
+        if len(args) > 3:
+            raise IndexError(f'Передано {len(args)} аргументов, а ожидается 3')
 
 
 
